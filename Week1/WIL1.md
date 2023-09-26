@@ -36,7 +36,7 @@ for(var i=1; i<10; i++){
 
 웹 브라우저의 콘솔에서 실행하기
 ------
-<p align="center"><img src="/img/Modern_Javascript_2_3_1.png" width="500" height="400"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_2_3_1.png" width="500" height="400"></p><br/>
 
 자바스크립트 코드를 HTML 문서에 삽입하여 웹 브라우저로 실행하기
 ------
@@ -63,12 +63,12 @@ for(var i=1; i<10; i++){
 </html>
 ```
 크롬으로 factorial.html을 열고 콘솔을 켜면 콘솔에 실행 결과가 표시된다.<br/>
-<p align="center"><img src="/img/Modern_Javascript_2_3_2.png" width="500" height="400"></p><br/>
+<p align="center"><img src="Week1/img/Modern_Javascript_2_3_2.png" width="500" height="400"></p><br/>
 
 factorial.html의 console.log(...) 부분을 document.write(...)로 바꾸면 출력 결과를 웹 페이지의 창 안에서 확인할 수 있습니다.(factorial-write.html)<br/>
 `document.write(i + "! = " + fact(i) + "<br />");`<br/>
 수정된 HTML 파일을 웹 브라우저로 열면 다음과 같이 표시된다.<br/>
-<p align="center"><img src="/img/Modern_Javascript_2_3_3.png" width="500" height="400"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_2_3_3.png" width="500" height="400"></p><br/>
 document.write를 사용하면 콘솔 화면을 켤 필요가 없다. 그러나 실무에서는 웹 페이지에 document.write를 사용하여 출력하는 경우가 매우 드물다.<br/>
 
 Node.js의 대화형 모드로 실행하기
@@ -94,9 +94,9 @@ Node.js로 파일을 읽어 들여 실행하기
 ------
 Node.js는 주로 서버 측 자바스크립트 실행 환경으로 사용된다. Node.js 위에서 동작하는 서버 애플리케이션을 작성하면 다양한 웹 서버를 구축할 수 있고 일반 PC에서도 설치할 수 있어서 자바스크립트 프로그램을 여기서 실행시킬 수도 있다.<br/>
 Node.js를 실행시키려면 명령프롬프트를 사용한다.<br/>
-<p align="center"><img src="/img/Modern_Javascript_2_3_4.png" width="500" height="400"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_2_3_4.png" width="500" height="400"></p><br/>
 Node.js로 파일을 읽어 들여 실행하면 규모가 큰 프로그램도 텍스트 편집기로 작성하거나 편집한 후에 실행시킬 수 있어 매우 편리하다. Node.js로 파일을 읽어 들여 실행하는 방법은 다음과 같다.<br/>
-<p align="center"><img src="/img/Modern_Javascript_2_3_5.png" width="500" height="400"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_2_3_5.png" width="500" height="400"></p><br/>
 
 프로그램 작성법
 ======
@@ -1145,7 +1145,7 @@ alert 메서드는 경고 대화상자를 표시한다. 인수로는 경고 문�
 alert("안녕하세요!");
 ```
 이 코드는 대화상자에서 다음처럼 표시된다.<br/>
-<p align="center"><img src="/assets/img/Modern_Javascript_6_1_1.png" width="400" height="300"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_6_1_1.png" width="400" height="300"></p><br/>
 **확인** 버튼을 누르면 대화상자가 사라지고 코드 제어권이 호출한 부분으로 돌아간다.
 
 prompt(입력 대화상자)
@@ -1155,7 +1155,7 @@ prompt 메서드는 입력 대화상자를 표시한다. 인수로는 입력을 
 var name= prompt("이름을 입력하십시오");
 ```
 이 코드는 대화상자에서 다음처럼 표시된다.<br/>
-<p align="center"><img src="/assets/img/Modern_Javascript_6_1_2.png" width="400" height="300"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_6_1_2.png" width="400" height="300"></p><br/>
 사용자로부터 입력받은 문자열은 prompt 메서드의 변환값이 된다. 두 번째 인수로는 초기 입력 값을 지정할 수 있다. prompt가 반환하는 값은 문자열이지만 숫자 값을 구하려면 parseInt나 parseFloat 메서드를 활용해서 숫자로 바꾼다.
 
 ```javascript
@@ -1170,7 +1170,7 @@ confirm 메서드는 **확인** 버튼과 **취소** 버튼이 있는 확인 대
 var ret = confirm("링크를 표시하시겠습니까?");
 ```
 이 코드는 대화상자에 다음처럼 표시된다.<br/>
-<p align="center"><img src="/assets/img/Modern_Javascript_6_1_3.png" width="400" height="300"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_6_1_3.png" width="400" height="300"></p><br/>
 
 confirm 메서드는 논리값을 반환한다. **확인** 버튼을 누르면 true가 반환되고 **취소** 버튼을 누르면 false가 반환된다.
 
@@ -1267,7 +1267,7 @@ HTML 요소에 이벤트 처리기 속성을 설정하면 그 요소에 이벤�
 </html>
 ```
 실행결과<br/>
-<p align="center"><img src="/assets/img/Modern_Javascript_6_3_1.png" width="400" height="300"></p><br/>
+<p align="center"><img src="/Week1/img/Modern_Javascript_6_3_1.png" width="400" height="300"></p><br/>
 이 예제에서 이벤트 처리기는 다음 HTML 요소에 등록되어 있다.
 ```html
 <input type="button" value="click" onclick="displayTime()">

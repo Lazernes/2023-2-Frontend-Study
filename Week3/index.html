@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>투두리스트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Things to do</h1>
+    <form id="input-form">
+      <input type="text" id="input-text" placeholder="Enter your to-do" />
+      <button id="input-button" onclick="addTodoList()">+</button>
+    </form>
+    <section class="todo-section">
+      <h2>to do <span id="todo-count"></span></h2>
+      <ul id="todo-list"></ul>
+    </section>
+    <section class="done-section">
+      <h2>done <span id="done-count"></span></h2>
+      <ul id="done-list"></ul>
+    </section>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

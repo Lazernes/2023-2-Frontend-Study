@@ -103,6 +103,7 @@ button {
   background-color: orange;
 }
 ```
+
 위 파일에서 **grid-template-columns: repeat(4, 1fr);**는 컨테이너를 열 방향으로 4등분을 해주는 역할을 한다.<br/>
 CSS파일을 완성하면 다음과 같다.<br/>
 <p align="center"><img src="/Week4/img/GDSC_Week4_3.png" width="300" height="500"></p>
@@ -257,6 +258,7 @@ if (action === "num") {
       isFirstDigit = false; 
     }
 ```
+
 **isFirstDigit && click === "0"**은 첫 번째 숫자이고 입력된 값이 0인 경우 아무 작업도 수행하지 않도록 한다. **displayEle.textContent === "" && Operator === ""**는 창이 비어있고 연산자를 누르지 않았을때, 다음 **else if**는 창이 비어있지 않고 연산자를 누르지 않았을 때, 다음 **else if**는 창이 비어있고 연산자를 눌렀을 때, 그 다음은 창이 비어있지 않고 연산자를 누르지 않았을 때, **isFirstDigit = false**는 첫 번째 숫자 입력 후에는 첫 번째 숫자가 아님을 표시한다.
 
 ```javascript
@@ -269,6 +271,7 @@ if (action === "result") {
         isFirstDigit = true; 
       }
 ```
+
 위 코드는 "="를 눌렀을 때 calculate 함수를 실행한다.
 
 ```javascript
@@ -280,9 +283,11 @@ if (action === "ac") {
       isFirstDigit = true; 
     }
 ```
+
 위 코드는 "AC" 버튼을 눌렀을 때 초기화를 한다.
 
 완성된 script.js는 다음과 같다.
+
 ```javascript
 const buttons = document.querySelectorAll("button");
 const operators = document.querySelectorAll(".operator");
@@ -378,5 +383,6 @@ let calculator = () => {
 };
 calculator();
 ```
+
 이제 계산기 기능을 사용하면 다음과 같이 나온다.<br/>
 <p align="center"><img src="/Week4/img/GDSC_Week4_4.png" width="300" height="500"></p>

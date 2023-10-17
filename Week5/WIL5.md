@@ -623,7 +623,7 @@ Node.js 패키지
 npm init
 ```
 　npm init은 Node.js 패키지를 초기화 하는 명령어이다. 초기화란 Node.js 패키지를 구성하는 데 필요한 최소한의 구성 요소를 자동으로 생성하는 과정이다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/3장 Node_js/3-1.png" width="400"></p>
+<p align="center"><img src="/Week5/img/3-1.png" width="400"></p>
 
 　초기화된 패키지의 package.json에는 기본적으로 다음 항목들이 존재한다.
 * name: 패키지 이름
@@ -653,7 +653,7 @@ console.log("index run");
 }
 ```
 　터미널에 `npm run start`를 입력하면 package.json에 기록한 scripts에서 일치하는 명령어를 찾아 실행한다.
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/3장 Node_js/3-2.png" width="400"></p>
+<p align="center"><img src="/Week5/img/3-2.png" width="400"></p>
 
 Node.js 모듈 시스템
 ======

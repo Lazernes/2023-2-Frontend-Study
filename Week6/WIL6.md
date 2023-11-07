@@ -8,7 +8,7 @@
 실습 환경 설정하기
 ------
 　src 폴더를 다음과 같이 만들어 준다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-1.png" width="200"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-1.png" width="200"></p>
 
 　src폴더의 index.js와 App.js를 다음과 같이 수정한다.
 ```javascript
@@ -78,17 +78,17 @@ export default App;
 ```
 
 　리액트는 다른 컴포넌트를 태그로 감싸 사용한다. 이때 App처럼 다른 컴포넌트를 return 문 내부에 포함하는 컴포넌트를 '부모 컴포넌트'라고 한다. 반대로 Header처럼 App의 return 문에 포함된 컴포넌트를 '자식 컴포넌트'라고 한다. 이렇게 부모의 return 문에 자식을 포함하는 행위를 "자식 컴포넌트를 배치한다."라고 표현한다. Header 컴포넌트를 페이지에 렌더링하면 다음과 같다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-2.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-2.png" width="500"></p>
 
 **컴포넌트의 계층 구조**<br/>
 　리액트 컴포넌트는 다음과 같은 부모-자식 관계라는 계층 구조를 형성한다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-3.jpg" width="300"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-3.jpg" width="300"></p>
 
 　컴포넌트의 계층 구조를 다른 말로 '컴포넌트 트리'라고 한다. 그리고 컴포넌트 트리에서 App은 항상 최상위에 존재하므로 이를 '루트 컴포넌트'라고 부른다.
 
 **컴포넌트별로 파일 분리하기**<br/>
 　리액트에서는 하나의 파일에 여러 컴포넌트를 만들면 코드의 가독성이 떨어지기 떄문에 보통 하나의 파일에 하나의 컴포넌트를 만든다. 컴포넌트를 여러 파일로 나누고, App.js에서 불러와 App 컴포넌트의 자식으로 배치한다. 다음과 같이 폴더를 만들자.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-4.png" width="300"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-4.png" width="300"></p>
 
 　이후 Header.js와 App.js를 다음과 같이 작성한다.
 ```javascript
@@ -116,7 +116,7 @@ export default App;
 ```
 
 　Header 컴포넌트를 잘 렌더링했는지 결과를 확인하면 다음과 같다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-2.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-2.png" width="500"></p>
 
 　다음으로 페이지의 몸통 역할을 수행할 Body와 페이지 정보를 표시할 Footer 컴포넌트를 만든다. component 폴더에 Body.js와 Footer.js를 각각 만들고 다음과 같이 코드를 작성한다.
 ```javascript
@@ -160,7 +160,7 @@ export default App;
 ```
 
 　페이지에서 Header, Body, Footer 컴포넌트를 잘 렌더링하는지 확인면 다음과 같다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-5.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-5.png" width="500"></p>
 
 JSX
 ======
@@ -182,7 +182,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-1.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-1.png" width="500"></p>
 
 JSX와 자바스크립트 표현식
 ------
@@ -204,7 +204,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-2.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-2.png" width="500"></p>
 
 **문자열 표현식**<br/>
 　문자열 표현식이란 문자열 또는 문자열로 평가되는 식을 말한다. component 폴더의 Body.js를 다음과 같이 수정한다.
@@ -222,7 +222,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-3.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-3.png" width="500"></p>
 
 **논리 표현식**<br/>
 　논리 표현식이란 참이나 거짓으로 평가되는 식을 말한다. component 폴더의 Body.js를 다음과 같이 수정한다.
@@ -240,7 +240,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-5.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-1-5.png" width="500"></p>
 
 　만일 불리언 값을 페이지에 렌더링하고 싶다면, 다음과 같이 현 변환 함수를 이용해 문자열로 바꿔주어야 한다.
 ```javascript
@@ -257,7 +257,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-4.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-4.png" width="500"></p>
 
 **사용할 수 없는 값**<br/>
 　JSX는 값을 반환하는 자바스크립트 표현식을 사용할 수 있다. 그러나 모든 값을 사용할 수 있는 것은 아니다. 원시 자료형에 해당하는 숫자, 문자열, 불리언, null, undefined를 제외한 값을 사용하면 오류가 발생한다. 예를들어 **객체 자료형** 값을 반환하는 표현식을 작성하면 페이지에는 아무것도 나타나지 않는다. 만일 객체 자료형의 값을 페이지에 렌더링하고 싶다면, 프로퍼티 접근 표기법으로 값을 원시 자료형으로 바꿔 주어야 한다.
@@ -278,7 +278,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-5.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-5.png" width="500"></p>
 
 JSX 문법에서 지켜야 할 것들
 ------
@@ -307,7 +307,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-6.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-6.png" width="500"></p>
 
 **조건문을 이용한 조건부 렌더링**<br/>
 　조건문은 자바스크립트의 표현식이 아니기 때문에 JSX와 함께 사용할 수 없지만, 다음과 깉이 조건에 따라 컴포넌트가 반환하는 값을 다르게 표시하도록 만들 수 있다.
@@ -326,7 +326,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-7.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-7.png" width="500"></p>
 
 JSX 스타일링
 ------
@@ -347,7 +347,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-8.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-8.png" width="500"></p>
 
 　인라인 스타일링은 하나의 파일 안에서 UI 표현을 위한 HTML과 스타일을 위한 CSS 규칙을 함께 작성할 수 있다는 장점이 있다. 그러나 페이지가 스타일을 계산할 때 불필요한 연산을 수행할 가능성이 있고, 스타일 규칙이 많으면 코드가 복잡해져 가독성이 떨어진다.<br/>
 
@@ -374,7 +374,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-9.png" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-9.png" width="500"></p>
 
 컴포넌트에 값 전달하기
 ======
@@ -410,7 +410,7 @@ export default App;
 ```
 
 　전달하는 Props는 단일 객체이다. 따라서 객체 Props에는 name 프로퍼티가 추가된다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-10.jpg" width="500"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-10.jpg" width="500"></p>
 
 　App에서 전달한 Props를 Body 컴포넌트에서 사용해보자. Body.js에서 기존 내용을 모두 지우고 다음과 같이 작성한다.
 ```javascript
@@ -421,7 +421,7 @@ function Body(props) {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
 
 **Props로 여러 개의 값 전달하기**<br/>
 　App에서 Body 컴포넌트에 객체 Props로 여러 개의 값을 담아 전달해보다. App 컴포넌트를 다음과 같이 수정한다.
@@ -457,7 +457,7 @@ function Body(props) {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
 
 **구조 분해 할당으로 여러 개의 값 사용하기**<br/>
 　Props로 전달된 값이 많으면, 이 값을 사용할 때마다 객체의 점 표기법을 사용해야해서 불편하다. 이는 Props는 객체이므로 구조 분해 할당하면 간편하게 사용할 수 있다. 다음과 같이 Body 컴포넌트를 수정한다.
@@ -474,7 +474,7 @@ function Body(props) {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-2-11.png" width="700"></p>
 
 　Body 컴포넌트의 매개변수에서 구조 분해 할당하면 더 간결한 코드를 작성할 수 있다.
 ```javascript
@@ -541,7 +541,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-3-1.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-3-1.png" width="700"></p>
 
 　리액트의 이벤트 핸들링은 HTML의 이벤트 핸들링과 흡사하지만, 차이점이 몇가지 있다. 먼저 이벤트 핸들러 표기에서 HTML은 onclick이지만 리액트는 카멜 케이스 문법에 따라 onClick으로 표기한다. 그리고 Props로 전달할 값을 지정할 때처럼 onClick={} 문법으로 이벤트 핸들러를 설정한다. 또한 이벤트 핸들러를 설정할 때는 함수 호출의 결괏값을 전달하는 것이 아니라 콜백 함수처럼 함수 그 자체를 전달한다.<br/>
 　HTML, 자바스크립트에서는 이벤트 핸들러를 성정할 때 함수를 호출하듯 소괄호를 붙여준다. 그러나 리액트에서는 Props의 값을 설정할 때처럼 소괄호 없이 함수 이름만 명시한다.
@@ -569,7 +569,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-3-2.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-3-2.png" width="700"></p>
 
 컴포넌트와 상태
 ======
@@ -604,7 +604,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-1.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-1.png" width="700"></p>
 
 　State 변수 count를 만들 때, 함수 useState에서 인수로 0을 전달했기 떄문에 페이지에서는 0을 렌더링한다.<br/>
 
@@ -628,7 +628,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-2.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-2.png" width="700"></p>
 
 　set함수를 호출해 State 값을 변경하면, 변경값을 페이지에 반영하기 위해 컴포넌트를 다시 렌더링한다. 리액트에서는 이것을 '컴포넌트의 업데이트'라고 표현한다. 컴포넌트가 페이지에 렌더링하는 값을 컴포넌트 함수의 반환값이다. 따라서 컴포넌트를 다시 렌더링한다고 함은 컴포넌트 함수를 다시 호출한다는 의미와 같다.<br/>
 
@@ -656,7 +656,7 @@ export default Body;
 ```
 
 　onChage 이벤트는 사용자가 입력 폼에서 텍스트를 입력하면 바로 동작한다.<br/>
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-3.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-3.png" width="700"></p>
 
 　이 상태로도 텍스트 입력 폼을 이용해 사용자에서 입력을 받을 수 있다. 그러나 지금은 사용자가 입력한 텍스트가 리액트 컴포넌트가 관리하는 State에 저장되어 있지는 않다. 따라서 만약 버튼을 클릭했을 때 사용자가 입력한 텍스트를 콘솔에 출력하는 등의 동작을 수행하게 하려면 돔 API를 이용하는 등 번거로운 작업이 별도로 요구된다.<br/>
 　State를 하나 만들고 사용자가 폼에서 입력할 때마다 텍스트를 State 값으로 저장해본다. Body 컴포넌트를 다음과 같이 수정한다.
@@ -678,7 +678,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-4.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-4.png" width="700"></p>
 
 **input태그로 날짜 입력하기**<br/>
 　**input** 태그에서 type 속성을 "date"로 설정하면 날짜 형식의 데이터를 입력할 수 있다. 이번에는 State를 이용해 날짜 형식의 데이터를 입력 정보로 받아본다. Body 컴포넌트를 다음과 같이 수정한다.
@@ -700,7 +700,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-5.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-5.png" width="700"></p>
 
 **드롭다운 상자로 여러 옵션 중에 하나 고르기**<br/>
 　**select**태그는 **option**태그와 함께 사용한다. 이 태그를 사용하면 드롭다운(DropDown) 메뉴는 여러 목록을 나열해 보여 주는 입력 폼이 만들어진다. 이 폼 목록에 하나를 선택하면 해당 항목을 입력할 수 있다. 드롭다운 입력 폼은 쇼핑몰 사이트에서 여러 옵션을 선택할 때 자주 활용된다. 드롭다운 입력 폼에서 입력한 값을 State로 어떨게 처리하는지 알아보자. Body 컴포넌트를 다음과 같이 수정한다.
@@ -726,7 +726,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-6.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-6.png" width="700"></p>
 
 **글상자로 여러 줄의 텍스트 입력하기**<br/>
 　**textarea** 태그는 사용자가 여러 줄의 텍스트를 입력할 때 사용하는 폼을 만든다. 이 폼은 웹 페이지에서 사용자가 자기소개와 같이 여러 줄의 내용을 입력할 때 주로 활용된다. 이 폼을 편히상 글상자라고 한다. 이번에는 리액트에서 글상자에 입력한 내용을 State로 어떻게 처리하는지 살펴본다. Body 컴포넌트를 다음과 같이 수정한다.
@@ -748,7 +748,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-7.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-7.png" width="700"></p>
 
 **여러 개의 사용자 입력 관리하기**<br/>
 　여러 개의 사용자 입력을 State로 관리하는 방법을 살펴본다. 이름, 성별, 출생 연도, 자기소개 등을 한 번에 입력할 수 있도록 Body 컴포넌트를 다음과 같이 수정한다.
@@ -798,7 +798,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-8.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-8.png" width="700"></p>
 
 Props와 State
 ------
@@ -834,7 +834,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-9.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-4-9.png" width="700"></p>
 
 State와 자식 컴포넌트
 ------
@@ -898,7 +898,7 @@ function Body() {
 export default Body;
 ```
 
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-5-1.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/5장-리액트의-기본-기능-다루기/5-5-1.png" width="700"></p>
 
 **useRef로 입력 폼 초기화하기**<br/>
 　웹 서비스의 로그인 페이지는 대부분 사용자가 ID와 패스워드를 입력하고, 로그인 버튼을 클릭하면 패스워드가 올바른지 점검한다. 그런 다음 패스워드 입력 폼에서 작성한 값을 초기화한다. 리액트에서 Ref를 이용하면 이런 동작을 수행할 수 있다.<br/>
@@ -1041,7 +1041,7 @@ body {
 ```
 
 결과는 다음과 같다.
-<p align="center"><img src="/assets/img/한 입 크기로 잘라먹는 리액트/project1/1-1.png" width="700"></p>
+<p align="center"><img src="/Week6/assets/img/한 입 크기로 잘라먹는 리액트/project1/1-1.png" width="700"></p>
 
 
 

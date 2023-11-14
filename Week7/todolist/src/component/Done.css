@@ -1,0 +1,11 @@
+.Done {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Done .Done_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

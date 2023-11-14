@@ -1,0 +1,11 @@
+.Todo {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Todo .Todo_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

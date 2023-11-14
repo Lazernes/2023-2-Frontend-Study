@@ -1,0 +1,19 @@
+.DoneItem {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+/*  padding-bottom: 20px; */
+}
+
+.DoneItem .title {
+  padding: 10px;
+  flex: 1;
+}
+
+.DoneItem .DeleteButton button {
+  cursor: pointer;
+  color: rgb(0,0,0);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
